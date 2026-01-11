@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "3809a7dd4bb8d557",
+    "type": "split",
+    "children": [
+      {
+        "id": "8594f620b4f4de52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51639752ea6ab362",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OpenGL/Shaders/Shaders.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Shaders"
+            }
+          },
+          {
+            "id": "4d809b61b428e29d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OpenGL/Buffer Objects/Buffer Objects.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Buffer Objects"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fc6ee90d60e8eadb",
+    "type": "split",
+    "children": [
+      {
+        "id": "43b41c41032f4633",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc7dcfb521d5dd3d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1e2c2d0eb9b69152",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "bf837bd3b937a614",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e5ba818c58a86366",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d311611c97e021b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a53f54c466298d6e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OpenGL/Buffer Objects/Buffer Objects.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Buffer Objects"
+            }
+          },
+          {
+            "id": "f0d55ab4b1b4ed11",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "OpenGL/Buffer Objects/Buffer Objects.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Buffer Objects"
+            }
+          },
+          {
+            "id": "a0d8824384ef146b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6cd40502ad0304c3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5654753ae6398383",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OpenGL/Buffer Objects/Buffer Objects.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Buffer Objects"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "4d809b61b428e29d",
+  "lastOpenFiles": [
+    "README.md",
+    "OpenGL/OpenGL.md",
+    "OpenGL/Buffer Objects/Buffer Objects.md",
+    "OpenGL Objects.md",
+    "OpenGL/Buffer Objects",
+    "OpenGL/Shaders/Shaders.md",
+    "OpenGL",
+    "OpenGL/Shaders/GLSL (OpenGL Shading Language).md",
+    "OpenGL/Shaders/Fragment Shader.md",
+    "pipeline.png",
+    "Unconfirmed 382016.crdownload",
+    "OpenGL/Shaders/Vertex Shader.md",
+    "OpenGL/Shaders",
+    "OpenGL/Buffer Objects/VAO (Vertex Array Object).md",
+    "OpenGL/Buffer Objects/VBO (Vertex Buffer Object).md",
+    "vertex_attribute_pointer_interleaved.png",
+    "Unconfirmed 541364.crdownload",
+    "OpenGL/Buffer Objects/EBO (Element Buffer Object).md",
+    "2026-01-11.md",
+    "Untitled.base",
+    "Welcome.md"
+  ]
+}
