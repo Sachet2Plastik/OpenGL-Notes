@@ -7,4 +7,4 @@ OpenGL is a set of functions that enable the user to communicate with a GPU to r
 # [Shaders](Shaders.md)
 
 
-# [Buffer Objects](Buffer%20Objects.md)
+# [Buffer Objects](Buffer%20Objects/Buffer%20Objects.md)
