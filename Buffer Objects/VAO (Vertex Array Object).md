@@ -4,6 +4,7 @@ It define ***the layout*** of the VBO(s).
 
 given this exemple:
 ![](../vertex_attribute_pointer_interleaved.png)
+
 we can define the position of the data inside the [VBO (Vertex Buffer Object)](VBO%20(Vertex%20Buffer%20Object).md) like so: [Exemple given the image above](#Example) [{Obsidian.}](#Example%20Usage%20(given%20the%20above%20example%20with%20the%20drawing))
 
 
