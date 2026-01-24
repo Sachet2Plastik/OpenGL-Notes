@@ -1,7 +1,8 @@
 
 A Vertex Buffer Object is a buffer that store vertex data like position, color, texture coords... and are used to send data to the GPU in batch rather then vertex per vertex which is way more memory friendly.
 
-Small representation of a VBO data with position and colors![[vertex_attribute_pointer_interleaved.png]]
+Small representation of a VBO data with position and colors
+![[../Assets/vertex_attribute_pointer_interleaved.png]]
 
 ## Related Functions
 
@@ -29,7 +30,7 @@ glGenBuffers(2, VBOs)
 ***Used to assign a type to a generated buffer***
 
 **target/type** : the type of buffer to bind (for VBO we use `GL_ARRAY_BUFFER`).
-**buffer** : the id of the targetted buffer.
+**buffer** : the id of the targeted buffer.
 
 #### Example usage
 ```c++
@@ -39,8 +40,8 @@ glBindBuffer(GL_ARRAY_BUFFER, id);
 // so taking the above exemple it should be VBO or VBOs[i]
 ```
 
->[!hint]
-> binding to 0 unbind the buffer.
+>[!info]
+> binding to 0 unbind a previously binded buffer.
 > `glBindBuffer(GL_ARRAY_BUFFER, 0);`
 
 ### `glBufferData(target/type, size, vertices, usage)`
@@ -48,12 +49,15 @@ glBindBuffer(GL_ARRAY_BUFFER, id);
 ***Used to fill the LAST BINDED buffer with vertices data***
 
 **target/type** : the type of buffer to bind (for VBO use `GL_ARRAY_BUFFER`)
+
 **size** : the size of the vertices array (basically just use a `sizeof()` on the vertices array you send)
+
 **vertices** : an array of vertices data (for example a list of float)
+
 **usage** : the expected usage pattern of this data, most common being :
-	- `GL_STREAM_DRAW` : the data is set only once and used by the GPU at most a few times.
-	- `GL_STATIC_DRAW` : the data is set only once and used many times.
-	- `GL_DYNAMIC_DRAW` : the data is changed a lot and used many times.
+- `GL_STREAM_DRAW` : the data is set only once and used by the GPU at most a few times.
+- `GL_STATIC_DRAW` : the data is set only once and used many times.
+- `GL_DYNAMIC_DRAW` : the data is changed a lot and used many times.
 
 #### Example usage 
 ```c++

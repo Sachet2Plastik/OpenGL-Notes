@@ -3,7 +3,7 @@ A Vertex Array Object is a "list of instruction" to tell OpenGL how to operate o
 It define ***the layout*** of the VBO(s).
 
 given this exemple:
-![](../vertex_attribute_pointer_interleaved.png)
+![](../Assets/vertex_attribute_pointer_interleaved.png)
 
 we can define the position of the data inside the [VBO (Vertex Buffer Object)](VBO%20(Vertex%20Buffer%20Object).md) like so: [Exemple given the image above](#Example) [{Obsidian.}](#Example%20Usage%20(given%20the%20above%20example%20with%20the%20drawing))
 
@@ -33,7 +33,9 @@ glGenVertexArrays(i, VAOs);
 ***Used to define a certain layout of data from a currently binded VBO***
 
 **layout** : the identifier of this attribute layout.
+
 **attributeSize** : the size of this attribute, THIS IS NOT A `sizeof()` this time, this is more the **number of elements** this attribute contain.
+
 **type** : the type of value the attribute is made of (int, float, etc...)
 	- `GL_FLOAT` : for float
 	- `GL_INT` : for int
