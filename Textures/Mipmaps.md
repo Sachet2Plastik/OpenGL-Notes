@@ -26,7 +26,17 @@ Mipmaps share similar options that of [Texture Filtering](Texture%20Filtering.md
 > The mipmapsOption only works on minifying filter, using it on a magnifying option will produce an `GL_INVALID_ENUM` error.
 
 #### Example usage
-```cpp
+```rust
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 ```
+
+### `glGenerateMimap(textureTarget)`
+
+**This function is used to automatically generate the different mipmaps levels instead of manually generate them manually**
+
+**textureTarget** : specify if we are working with 1D,2D or 3D texture.
+
+>[!info]
+> This function need to be called after loading the texture with the `glTexImage*D` function
+

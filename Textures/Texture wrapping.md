@@ -24,7 +24,7 @@ By default, OpenGL repeat the texture but we can manually specify 3 other behavi
 **wrappingMode** : the wrapping mode we wan to use.
 
 #### Example usage
-```cpp
+```rust
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
 ```

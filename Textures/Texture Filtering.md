@@ -12,7 +12,7 @@ Example of both mode on a large object and a low resolution texture:
 ![](../Assets/texture_filtering.png)
 Texture filtering can be set independently for up or down, so you could for example use `GL_NEAREST` when textures are scaled downwards and `GL_LINEAR` for upscaled textures. We thus have to specify the filtering method for both options via `glTexParameter*`.
 
-## Related Function
+## Related Functions
 
 ### `glTexParameteri(textureTarget, optionToSet, filteringOption)`
 
@@ -25,6 +25,6 @@ Texture filtering can be set independently for up or down, so you could for exam
 **filteringOption** : the filtering option we want to set.
 
 #### Example usage
-```cpp
+```rust
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST); glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 ```
