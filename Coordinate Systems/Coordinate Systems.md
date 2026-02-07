@@ -28,6 +28,7 @@ Our vertex coord start as *local coord* in the *local space* that will then be p
 4. The ***Clip Coordinates*** is where we convert "readable" coordinates to the -1.0 to 1.0 range and determine which vertices are visible on the screen.
 5. Finally, the ***Screen Coordinates*** are processed via what we call *viewport transform* which convert our -1.0 to 1.0 coord to the actual `glViewport`.
 
+---
 ## The "long" run
 ### Local Space
 
@@ -49,11 +50,12 @@ The ***Model Matrix*** is transformation matrix that apply, translation, scaling
 The ***View Space*** is where the coordinates are converted relatively to us (the viewer of the scene), in other word, the camera. This is where we define the space "visible" by a camera.
 
 #### View Matrix
-later
+
+The View Matrix is what makes the world "move" by performing the reverse movements of the camera to the entire world.
 
 ### Clip Space
 
-The ***Clip Space*** is where we convert our "readable" coordinates to coordinates as OpenGL expect them between the -1.0 to 1.0 range. This is where the ***Projection Matrix*** comes in clutch.
+The ***Clip Space*** is where we convert our "readable" coordinates to coordinates as OpenGL expect them between the -1.0 to 1.0 range. This is the ***Clip Space*** that determine if a vertex is visible. This is where the ***Projection Matrix*** comes in clutch.
 
 The viewport created by the projection matrix is name frustum, what's fitting inside this frustum will end up in the user screen.
 
@@ -61,6 +63,7 @@ The last step is what we call the *Perspective division*. This is where the 4th 
 
 We can create 2 different ***Projection Matrix***, the orthographic projection matrix or the perspective projection matrix.
 
+---
 #### Orthographic projection
 
 An orthographic projection matrix define a cube/rectangle like frustum box. To create an orthographic projection matrix we need to specify the width, height and **length** of the frustum box.
@@ -84,8 +87,9 @@ glm::ortho(0.0f, 800.0f, 0.0f, 600.0f, 0.1f, 100.0f);
 **near** : the distance of the near plane.
 **far** : the distance of the far plane.
 
-The orthographic projection maps coordinates as a 2D plane on the screen since it doesn't take the perspective into account (this is the work of the ***Perspective projection matrix***).
+The orthographic projection maps coordinates as a 2D plane on the screen since it doesn't take the perspective into account (this is the work of the ***Perspective projection matrix***). The idea of **depth** is still keept in mind tho, the Z coord is still used to determine if an object if in front of another.
 
+---
 #### Perspective projection
 
 For a more "realistic" projection we want to display farther objects smaller, this is perspective.
@@ -111,3 +115,26 @@ similar to `glm::ortho`, `glm::perspective` is used to create a projection matri
 
 `glm::perspective(FOV, aspectRatio, near, far)`
 
+**FOV** : the field of view to define how large the viewspace is (vertical). (in radians)
+
+**aspectRatio** : the aspect ratio is obtained by dividing our viewport width by its height.
+
+**near** : the distance of the near plane (usually 0.1)
+
+**far** : the distance of the far plane (usually 100.0)
+
+---
+
+Visual comparison of a perspective and orthographic view:
+
+![](../Assets/perspective_orthographic.png)
+
+---
+So, to get to our clip space coordinate we perform all the steps we just seen, which give:
+
+$Vclip=Mprojection⋅Mview⋅Mmodel⋅Vlocal$
+
+>[!note]
+>The operations are performed from right to left.
+
+See [Going 3D](Going%203D.md) for application.
