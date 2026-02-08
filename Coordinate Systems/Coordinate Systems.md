@@ -5,7 +5,7 @@ Transforming the coordinate of an object to a **normalized device coordinate (ND
 
 There are 5 total different coordinates systems:
 
-- [Local Space (or Object Space)](#Local Space) [{Obsidian.}](#Local%20Space)
+- [Local Space (or Object Space)](#Local%20Space) [{Obsidian.}](#Local%20Space)
 - [World Space](#World Space) [{Obsidian.}](#World%20Space)
 - [View Space (or Eye Space)](#View Space) [{Obsidian.}](#View%20Space)
 - [Clip Space](#Clip Space) [{Obsidian.}](#Clip%20Space)
