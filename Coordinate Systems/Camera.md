@@ -174,7 +174,6 @@ To update our camera direction we need to follow some steps:
 - Add some constraints if needed for min/max yaw and pitch
 - Calculate the new direction vector
 
-Step 1:
 
 we can store the values of the last X and Y pos of the mouse during the last frame.
 
